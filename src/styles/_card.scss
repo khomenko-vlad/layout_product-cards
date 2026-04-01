@@ -1,0 +1,103 @@
+.card {
+  width: 198px;
+  height: 406px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  background-color: $bcg-color;
+  color: $main-color;
+
+  // 🔹 IMAGE
+  &__image {
+    margin-top: 32px;
+    width: 160px;
+    height: 134px;
+    flex: none;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* як на макеті (fill) */
+      display: block;
+    }
+  }
+
+  // 🔹 CONTENT
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 166px;
+  }
+
+  // 🔹 TITLE
+  &__name {
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  // 🔹 CODE
+  &__code {
+    margin-bottom: 0;
+    font-weight: 400;
+    margin-top: 4px;
+    font-size: 10px;
+    color: $secondary-color;
+  }
+
+  // 🔹 REVIEW (контейнер)
+  &__review {
+    width: 166px;
+    margin-top: 16px;
+    gap: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // 🔹 RATING TEXT
+  &__rating {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  // 🔹 PRICE WRAPPER (тільки відступи)
+  &__price {
+    margin-top: 24px;
+  }
+
+  // 🔹 BUTTON
+  &__button {
+    margin-top: 16px;
+    height: 40px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid $blue-color;
+    border-radius: 5px;
+    background-color: $blue-color;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $bcg-color;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $bcg-color;
+      color: $blue-color;
+    }
+  }
+}

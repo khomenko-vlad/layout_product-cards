@@ -1,0 +1,10 @@
+@import './variables';
+@import './stars';
+@import './card';
+@import './price';
+
+body {
+  margin: 0;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+}

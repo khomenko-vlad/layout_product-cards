@@ -22,7 +22,7 @@
     <title>Product cards</title>
     <link
       rel="stylesheet"
-      href="./styles/index.scss"
+      href="./styles/main.scss"
     />
   </head>
   <body>
@@ -30,49 +30,38 @@
       class="card"
       data-qa="card"
     >
-      <div class="card-image">
+      <div class="card__image">
         <img
           src="./images/imac.jpeg"
           alt="iMac"
         />
       </div>
-      <div class="card-content">
-        <h1 class="card-content__name">
+
+      <div class="card__content">
+        <h1 class="card__name">
           APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)
         </h1>
-        <h1 class="card-content__code">Product code: 195434</h1>
-        <div class="card-content__review review">
-          <span class="review__stars">
-            <img
-              src="./images/star-active.svg"
-              alt="star"
-            />
-            <img
-              src="./images/star-active.svg"
-              alt="star"
-            />
-            <img
-              src="./images/star-active.svg"
-              alt="star"
-            />
-            <img
-              src="./images/star-active.svg"
-              alt="star"
-            />
-            <img
-              src="./images/star.svg"
-              alt="star-inactive"
-            />
-          </span>
-          <span class="review__rating">Reviews: 5</span>
+        <h2 class="card__code">Product code: 195434</h2>
+
+        <div class="card__review">
+          <div class="stars stars--4">
+            <span class="stars__star"></span>
+            <span class="stars__star"></span>
+            <span class="stars__star"></span>
+            <span class="stars__star"></span>
+            <span class="stars__star"></span>
+          </div>
+          <span class="card__rating">Reviews: 5</span>
         </div>
-        <div class="card-content__price price">
+
+        <div class="card__price price">
           <span class="price__text">Price:</span>
           <span class="price__value">$2,199</span>
         </div>
+
         <a
           href="#"
-          class="card-content__button"
+          class="card__button"
           data-qa="hover"
         >
           Buy
