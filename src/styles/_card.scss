@@ -70,6 +70,9 @@
 
   // 🔹 PRICE WRAPPER (тільки відступи)
   &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 24px;
   }
 
@@ -99,5 +102,19 @@
       background-color: $bcg-color;
       color: $blue-color;
     }
+  }
+}
+
+.price {
+
+  &__text {
+    color: $secondary-color;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  &__value {
+    font-weight: 700;
+    font-size: 16px;
   }
 }
