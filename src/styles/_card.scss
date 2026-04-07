@@ -1,10 +1,9 @@
 .card {
-  width: 198px;
-  height: 406px;
+  width: 200px;
+  padding: 32px 16px 16px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   border: 1px solid $border-color;
   border-radius: 5px;
@@ -12,24 +11,9 @@
   color: $main-color;
 
   &__image {
-    margin-top: 32px;
+    margin: 0 auto;
     width: 160px;
     height: 134px;
-    flex: none;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-    }
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    width: 166px;
   }
 
   &__name {
@@ -41,6 +25,7 @@
   }
 
   &__code {
+    line-height: 14px;
     margin-bottom: 0;
     font-weight: 400;
     margin-top: 4px;
@@ -49,9 +34,7 @@
   }
 
   &__review {
-    width: 166px;
     margin-top: 16px;
-    gap: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,6 +43,7 @@
   &__rating {
     font-size: 10px;
     line-height: 16px;
+    font-weight: 400;
   }
 
   &__price {
@@ -69,12 +53,14 @@
     margin-top: 24px;
 
     &-text {
+      line-height: 18px;
       color: $secondary-color;
       font-weight: 400;
       font-size: 12px;
     }
 
     &-value {
+      line-height: 18px;
       font-weight: 700;
       font-size: 16px;
     }
@@ -93,6 +79,7 @@
     border-radius: 5px;
     background-color: $blue-color;
 
+    line-height: 16px;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
